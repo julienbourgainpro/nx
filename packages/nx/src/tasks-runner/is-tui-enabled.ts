@@ -33,18 +33,15 @@ export function shouldUseTui(
   const isCapable =
     skipCapabilityCheck || (process.stderr.isTTY && isUnicodeSupported());
 
+  if (!isCapable) {
+    return false;
+  }
+
   if (typeof nxArgs.tui === 'boolean') {
     if (nxArgs.tui && !isCapable) {
-      logger.warn(
-        'The Nx Terminal UI cannot be used in this environment; falling back to static output.'
-      );
       return false;
     }
     return nxArgs.tui;
-  }
-
-  if (!isCapable) {
-    return false;
   }
 
   if (['static', 'stream', 'dynamic-legacy'].includes(nxArgs.outputStyle)) {
