@@ -44,29 +44,21 @@ export function Hero(): ReactElement {
           </SectionHeading>
           <div className="mt-10 flex flex-col items-center justify-center gap-6 sm:flex-row">
             <ButtonLink
-              href="/getting-started/intro?utm_medium=website&utm_campaign=homepage_links&utm_content=cta_hero_get_started"
+              href="https://cloud.nx.app/get-started?utm_medium=website&utm_campaign=homepage_links&utm_content=cta_hero_get_started"
               title="Get started"
               variant="primary"
               size="default"
             >
-              Get started
+              Get started with Nx and Nx Cloud
             </ButtonLink>
 
             <ButtonLink
-              href="ci/intro/ci-with-nx?utm_medium=website&utm_campaign=homepage_links&utm_content=cta_hero_get_started&utm_source=nxdev"
+              href="/getting-started/intro?utm_medium=website&utm_campaign=homepage_links&utm_content=cta_hero_get_started&utm_source=nxdev"
               title="Learn about Nx on CI"
-              variant="contrast"
-              size="default"
-            >
-              Learn about Nx on CI
-            </ButtonLink>
-            <ButtonLink
-              href="/nx-cloud"
-              title="Try Nx Cloud for free"
               variant="secondary"
               size="default"
             >
-              Try Nx Cloud for free
+              See documentation
             </ButtonLink>
           </div>
 
