@@ -160,7 +160,7 @@ export function assertTaskGraphDoesNotContainInvalidTargets(
   taskGraph: TaskGraph
 ) {
   const nonParallelTasksThatDependOnContinuousTasks = [];
-  const nonParallelContinousTasksThatAreDependedOn = [];
+  const nonParallelContinuousTasksThatAreDependedOn = [];
   for (const task of Object.values(taskGraph.tasks)) {
     if (
       task.parallelism === false &&
