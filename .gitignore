@@ -107,3 +107,4 @@ tasks/
 # Raw docs local configuration (machine-specific)
 .rawdocs.local.json
 
+astro-nx-dev-poc/.netlify
